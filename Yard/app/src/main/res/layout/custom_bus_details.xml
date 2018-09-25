@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:weightSum="11">
+
+        <TextView
+            android:id="@+id/txttime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:text="Time"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/txtfrom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:textSize="25dp"
+            android:text="FromBus"
+            android:textColor="#000000"
+            android:typeface="serif" />
+        <TextView
+            android:id="@+id/txtto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:textSize="25dp"
+            android:text="ToBus"
+            android:textColor="#000000"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/txtVia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:text="ViaBUs"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/txtFalat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:textSize="25dp"
+            android:text="Falat"
+            android:textColor="#000000"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/txtBusType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:textSize="25dp"
+            android:text="Bus Type"
+            android:textColor="#000000"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/txtDivisionName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:textSize="25dp"
+            android:text="Division Name"
+            android:textColor="#000000"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:paddingRight="5dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/txtLateReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:text="Late Reason :"
+            android:textColor="#000000"
+            android:typeface="serif"
+           />
+
+        
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvreasonupdated"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#B6B6B4" />
+
+</LinearLayout>

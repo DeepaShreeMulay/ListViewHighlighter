@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:padding="10dp"
+    android:windowSoftInputMode="stateHidden">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Departure Bus"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="5dp"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1">
+
+
+    <TextView
+        android:id="@+id/textViewdepartfrom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="From "
+        android:gravity="left"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:layout_weight="0.1"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/textViewdepartto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text=" To "
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/textViewdepartVia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" Via"
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.5">
+        <EditText
+            android:id="@+id/editTextdepartDutyno"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:hint="Duty No."
+            android:maxLength="6"
+            android:inputType="numberDecimal"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:windowSoftInputMode="stateHidden">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextdepartBusno"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:hint="Bus No."
+            android:maxLength="6"
+            android:inputType="number"
+            android:textColor="#000"
+            android:padding="10dp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextdepartPlatform"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:hint="Platform"
+            android:maxLength="2"
+            android:inputType="number"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:windowSoftInputMode="stateHidden">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <EditText
+            android:id="@+id/editTextdepartTime"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:editable="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:hint="Time :"
+            android:inputType="numberDecimal"
+            android:textColor="#000"
+            android:padding="10dp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextDepartLateBy"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:hint="Late By :         mins"
+            android:inputType="number"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:windowSoftInputMode="stateHidden" >
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/editTextdepartReason"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:hint="Reason"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:layout_weight="1"></AutoCompleteTextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <AutoCompleteTextView
+            android:id="@+id/editTextdepartDriver"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:hint="Driver Batch No."
+            android:inputType="text|number"
+            android:maxLength="8"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_weight="0.5">
+        </AutoCompleteTextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/editTextdepartConductor"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:hint="Conductor Batch No."
+            android:inputType="text|number"
+            android:maxLength="8"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_weight="0.5">
+        </AutoCompleteTextView>
+
+    </LinearLayout>
+        </LinearLayout>
+
+
+        <ListView
+            android:layout_width="0dp"
+            android:layout_height="215dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"
+            android:id="@+id/listview_via_list"/>
+        </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+
+    <AutoCompleteTextView
+        android:id="@+id/edNC"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="bottom"
+        android:hint="Network Code"
+        android:textColor="#000000" />
+
+    <AutoCompleteTextView
+        android:id="@+id/edSN"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:gravity="bottom"
+        android:hint="Station Name"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/edYardId"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:gravity="bottom"
+        android:hint="Yard Id"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:text="Save"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:text="Update"
+        android:visibility="gone"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

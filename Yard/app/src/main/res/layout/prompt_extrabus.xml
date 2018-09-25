@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"    
+        android:background="@color/colorPrimaryDark"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Extra Bus"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.5">
+        <EditText
+            android:id="@+id/editTextextraDutyno"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:hint="Duty No."
+            android:inputType="numberDecimal"
+            android:textColor="#000"
+            android:padding="10dp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextextraBusno"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:hint="Bus No."
+            android:inputType="numberDecimal"
+            android:textColor="#000"
+            android:padding="10dp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextextraPlatform"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:hint="Platform"
+            android:inputType="numberDecimal"
+            android:textColor="#000"
+            android:padding="10dp" >
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.5">
+        <EditText
+            android:id="@+id/editTextextraTime"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.475"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:hint="Time :"
+            android:inputType="numberDecimal"
+            android:textColor="#000"
+            android:padding="10dp" >
+        </EditText>
+
+        <AutoCompleteTextView
+            android:id="@+id/editTextextraVia"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"
+            android:editable="false"
+            android:focusableInTouchMode="true"
+            android:gravity="left|center"
+            android:hint="Via"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:layout_weight="1.025"></AutoCompleteTextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <AutoCompleteTextView
+            android:id="@+id/editTextextraFrom"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:editable="false"
+            android:focusableInTouchMode="true"
+            android:hint="From"
+            android:inputType="text"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_weight="0.5">
+        </AutoCompleteTextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/editTextextraTo"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:editable="false"
+            android:focusableInTouchMode="true"
+            android:hint="To"
+            android:inputType="text"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_weight="0.5">
+        </AutoCompleteTextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <AutoCompleteTextView
+            android:id="@+id/editTextextraDriver"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/edittext_border"
+            android:editable="false"
+            android:focusableInTouchMode="true"
+            android:gravity="left|center"
+            android:hint="Driver Batch No."
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#000"></AutoCompleteTextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/editTextextraConductor"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/edittext_border"
+            android:editable="false"
+            android:focusableInTouchMode="true"
+            android:gravity="left|center"
+            android:hint="Conductor Batch No."
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#000"></AutoCompleteTextView>
+
+    </LinearLayout>
+
+</LinearLayout>

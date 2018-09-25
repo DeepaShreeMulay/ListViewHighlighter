@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:weightSum="11">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:textSize="25dp"
+            android:text="Time"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="From"
+            android:textColor="#000000"
+            android:typeface="serif" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="To"
+            android:textColor="#000000"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Via"
+            android:textColor="#000000"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Falat"
+            android:textColor="#000000"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Bus Type"
+            android:textColor="#000000"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Division Name"
+            android:textColor="#000000"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvreasonupdated"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#B6B6B4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview_bus_list"/>
+        </LinearLayout>
+</LinearLayout>
